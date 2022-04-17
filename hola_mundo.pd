@@ -1,0 +1,25 @@
+#N canvas 999 324 585 501 12;
+#X obj 147 67 osc~;
+#X obj 157 124 *~;
+#X obj 147 196 dac~;
+#X floatatom 128 11 5 100 200 0 - - -;
+#X msg 182 19 100;
+#X obj 256 96 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X msg 260 139 \$1 20;
+#X obj 265 178 line~;
+#X obj 263 293 line~;
+#X msg 272 234 0 \, 0.5 1000;
+#X msg 384 236 0.5 \, 0 2000;
+#X text 247 21 frecuencia;
+#X text 326 131 amplitud;
+#X text 322 291 fundido;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 9 0 8 0;
+#X connect 10 0 8 0;
